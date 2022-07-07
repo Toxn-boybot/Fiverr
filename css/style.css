@@ -1055,6 +1055,7 @@ footer {
   padding: 20px;
 }
 footer span {
-  color:#ddae71
+  color:#ddae71;
+  font-weight: 400;
 }
 /* End Footer  */

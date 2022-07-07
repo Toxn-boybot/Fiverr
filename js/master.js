@@ -64,6 +64,55 @@ toastr.options = {
 };
 OrderNow();
 
+//Click close button when clicking about
+ function about () {
+  let aboutButton = document.getElementById("aboutbtn");
+  let Closer = document.getElementById("btn-close");
+  aboutButton.onclick = function () {
+    Closer.click(); // this will trigger the click event
+    const y = document.getElementById("about").offsetTop;
+    window.scrollTo(0, y - 100);
+  };
+};
+about();
+
+//Click close button when clicking about
+ function menu () {
+  let menuButton = document.getElementById("menubtn");
+  let Closer = document.getElementById("btn-close");
+  menuButton.onclick = function () {
+    Closer.click(); // this will trigger the click event
+    const y = document.getElementById("our-menu2").offsetTop;
+    window.scrollTo(0, y - 50);
+  };
+};
+menu();
+ 
+
+
+//Click close button when clicking offers
+ function offers () {
+  let offersButton = document.getElementById("offersbtn");
+  let Closer = document.getElementById("btn-close");
+  offersButton.onclick = function () {
+    Closer.click(); // this will trigger the click event
+    const y = document.getElementById("offers").offsetTop;
+    window.scrollTo(0, y - 50);
+  };
+};
+offers();
+ 
+//Click close button when clicking contact
+ function contact () {
+  let contactButton = document.getElementById("contactbtn");
+  let Closer = document.getElementById("btn-close");
+  contactButton.onclick = function () {
+    Closer.click(); // this will trigger the click event
+    const y = document.getElementById("contact").offsetTop;
+    window.scrollTo(0, y - 50);
+  };
+};
+contact();
 
 
 
@@ -90,4 +139,4 @@ closeCartMenu();
 
 
 
-//remove item when clicking on action item
+
