@@ -91,7 +91,7 @@ body {
   width: max-content;
 }
 .logo img {
-  height: 60px;
+  height: 50px;
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -178,6 +178,9 @@ body {
   font-size: 20px;
   margin-right: 10px;
   position: relative;
+  background: #80808038;
+    padding: 4px;
+    border-radius: 50%;
 }
 .cart i::before {
   opacity: 0.7;
@@ -416,7 +419,7 @@ button {
     background-size: 135% auto;
   }
   .accordion-button:hover {
-    background-size: 145% auto;
+    background-size: 135% auto;
   }
 }
 @media (max-width: 360px) {
@@ -424,7 +427,7 @@ button {
     background-size: 170%;
   }
   .accordion-button:hover {
-    background-size: 185%;
+    background-size: 170%;
   }
 }
 @media (max-width: 357px) {
@@ -473,6 +476,8 @@ button {
 .carousel-item img {
   min-height: 70vh;
   height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
 @media (max-width: 760px) {
   .carousel-item img {
@@ -934,6 +939,7 @@ table {
 /* Start about  */
 .about {
   background-color: #ebebeb;
+  padding-top: 50px;
 }
 .about-us {
   text-align: center;
@@ -998,7 +1004,7 @@ table {
     margin: auto;
     margin-bottom: 20px;
 }
-.form-control {
+ .form-control {
     position: relative;
     flex: 1 1 auto;
     min-width: 0;
@@ -1018,6 +1024,13 @@ table {
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: none ;
+}
+.form-control:focus{
+  background-color: transparent;
+  outline: 0;
+  box-shadow: none;
+  border-color: #ced4da;
 }
 .input-group{
   display: flex;

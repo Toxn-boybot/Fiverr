@@ -1,4 +1,7 @@
-//Preloader
+
+
+window.onload = function () {
+  //Preloader
 setTimeout(function () {
   $(".preloader").delay(150).fadeOut("slow");
 }, 3000);
@@ -12,6 +15,8 @@ setTimeout(function () {
 window.onscroll = function () {
   scrollFunction();
 };
+}
+
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -139,4 +144,5 @@ closeCartMenu();
 
 
 
-
+//update date 
+document.getElementById("currYear").textContent = new Date().getFullYear();
