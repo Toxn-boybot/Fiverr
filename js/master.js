@@ -19,7 +19,7 @@ window.onscroll = function () {
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 50) {
     document.getElementById("ContHeader").style.height = "70px";
     document.getElementById("logo").style.height = "60px";
     document.getElementById("logo2").style.top = "0px";
