@@ -110,6 +110,7 @@ body {
   .logo {
     padding: 1%;
   }
+ 
 }
 @media(max-width:350px){
   .cart {
@@ -511,6 +512,11 @@ button {
   transform: translateX(-50%);
   min-height: 164px;
   font-family: oswald, sans-serif;
+}
+@media(max-width:1050px){
+  .carousel-caption{
+    min-height: 180px;
+  }
 }
 /* .carousel {
   height: calc(100vh - 90px);
