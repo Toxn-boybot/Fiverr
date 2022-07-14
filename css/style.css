@@ -205,6 +205,9 @@ body {
   left: -10px;
   opacity: 0.9;
 }
+.navbar.fixed-top.bg-light{
+  padding: 0px;
+}
 .navbar .container .cart {
   padding: 15px;
   font-family: oswald, sans-serif;
@@ -996,13 +999,15 @@ table {
 .contact{
   background-color: #111111;
   color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .contact h1 {
   width: fit-content;
     border-bottom: 3px solid red;
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
  .form-control {
     position: relative;

@@ -19,17 +19,23 @@ window.onscroll = function () {
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 50) {
+  if ((document.body.scrollTop > 0 || document.documentElement.scrollTop > 50)) {
     document.getElementById("ContHeader").style.height = "70px";
-    document.getElementById("logo").style.height = "60px";
+    document.getElementById("logo").style.height = "50px";
     document.getElementById("logo2").style.top = "0px";
+    document.getElementById("logo2").style.backgroundColor = "#f8f9fa";
+    document.getElementById("logo2").style.boxShadow = "none";
+    
   } else {
     document.getElementById("ContHeader").style.height = "90px";
     document.getElementById("logo").style.height = "70px";
     document.getElementById("logo2").style.top = "30px";
+    document.getElementById("logo2").style.backgroundColor = "wheat";
+    document.getElementById("logo2").style.boxShadow = "rgb(0 0 0 / 35%) 0px 5px 15px";
+    
   }
 }
-
+scrollFunction();
 // Alert on click when adding to cart
 buttons = Array.from(document.querySelectorAll(".order.btn"));
 buttons.forEach(function (e) {
