@@ -1,38 +1,34 @@
-
-
 window.onload = function () {
   //Preloader
-setTimeout(function () {
-  $(".preloader").delay(150).fadeOut("slow");
-}, 3000);
+  setTimeout(function () {
+    $(".preloader").fadeOut("slow");
+  }, 2000);
 
-//set overflow to hidden when preloading
-setTimeout(function () {
-  $("body").removeClass("preload");
-}, 3000);
+  //set overflow to hidden when preloading
+  setTimeout(function () {
+    $("body").removeClass("preload");
+  }, 2000);
 
-//shrink header on scroll
-window.onscroll = function () {
-  scrollFunction();
+  //shrink header on scroll
+  window.onscroll = function () {
+    scrollFunction();
+  };
 };
-}
-
 
 function scrollFunction() {
-  if ((document.body.scrollTop > 0 || document.documentElement.scrollTop > 50)) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 50) {
     document.getElementById("ContHeader").style.height = "70px";
     document.getElementById("logo").style.height = "50px";
     document.getElementById("logo2").style.top = "0px";
     document.getElementById("logo2").style.backgroundColor = "#f8f9fa";
     document.getElementById("logo2").style.boxShadow = "none";
-    
   } else {
     document.getElementById("ContHeader").style.height = "90px";
     document.getElementById("logo").style.height = "70px";
     document.getElementById("logo2").style.top = "30px";
     document.getElementById("logo2").style.backgroundColor = "wheat";
-    document.getElementById("logo2").style.boxShadow = "rgb(0 0 0 / 35%) 0px 5px 15px";
-    
+    document.getElementById("logo2").style.boxShadow =
+      "rgb(0 0 0 / 35%) 0px 5px 15px";
   }
 }
 scrollFunction();
@@ -63,20 +59,22 @@ toastr.options = {
 };
 
 //Click close button when clicking Order-Now button
- function OrderNow () {
+function OrderNow() {
   let orderButton = document.getElementById("OrderNow");
   let Closer = document.getElementById("btn-close");
 
   orderButton.onclick = function () {
-    Closer.click(); // this will trigger the click event
-    const y = document.getElementById("our-menu2").offsetTop;
-    window.scrollTo(0, y - 50);
+    setTimeout(function () {
+      Closer.click(); // this will trigger the click event
+      const y = document.getElementById("our-menu2").offsetTop;
+      window.scrollTo(0, y - 50);
+    }, 400);
   };
-};
+}
 OrderNow();
 
 //Click close button when clicking about
- function about () {
+function about() {
   let aboutButton = document.getElementById("aboutbtn");
   let Closer = document.getElementById("btn-close");
   aboutButton.onclick = function () {
@@ -84,11 +82,11 @@ OrderNow();
     const y = document.getElementById("about").offsetTop;
     window.scrollTo(0, y - 100);
   };
-};
+}
 about();
 
 //Click close button when clicking about
- function menu () {
+function menu() {
   let menuButton = document.getElementById("menubtn");
   let Closer = document.getElementById("btn-close");
   menuButton.onclick = function () {
@@ -96,13 +94,11 @@ about();
     const y = document.getElementById("our-menu2").offsetTop;
     window.scrollTo(0, y - 50);
   };
-};
+}
 menu();
- 
-
 
 //Click close button when clicking offers
- function offers () {
+function offers() {
   let offersButton = document.getElementById("offersbtn");
   let Closer = document.getElementById("btn-close");
   offersButton.onclick = function () {
@@ -110,11 +106,11 @@ menu();
     const y = document.getElementById("offers").offsetTop;
     window.scrollTo(0, y - 50);
   };
-};
+}
 offers();
- 
+
 //Click close button when clicking contact
- function contact () {
+function contact() {
   let contactButton = document.getElementById("contactbtn");
   let Closer = document.getElementById("btn-close");
   contactButton.onclick = function () {
@@ -122,10 +118,8 @@ offers();
     const y = document.getElementById("contact").offsetTop;
     window.scrollTo(0, y - 50);
   };
-};
+}
 contact();
-
-
 
 //Close the cart menu
 function closeCartMenu() {
@@ -148,7 +142,5 @@ function closeCartMenu() {
 }
 closeCartMenu();
 
-
-
-//update date 
+//update date
 document.getElementById("currYear").textContent = new Date().getFullYear();
