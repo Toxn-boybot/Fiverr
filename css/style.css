@@ -17,7 +17,6 @@ ul {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  
 }
 .container {
   padding-left: 15px;
@@ -69,7 +68,7 @@ body {
   }
 }
 .header .container {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -114,9 +113,8 @@ body {
   .logo {
     padding: 1%;
   }
- 
 }
-@media(max-width:350px){
+@media (max-width: 350px) {
   .cart {
     width: 30px;
   }
@@ -184,8 +182,8 @@ body {
   margin-right: 10px;
   position: relative;
   background: #80808038;
-    padding: 4px;
-    border-radius: 50%;
+  padding: 4px;
+  border-radius: 50%;
 }
 .cart i::before {
   opacity: 0.7;
@@ -210,7 +208,7 @@ body {
   left: -10px;
   opacity: 0.9;
 }
-.navbar.fixed-top.bg-light{
+.navbar.fixed-top.bg-light {
   padding: 0px;
 }
 .navbar .container .cart {
@@ -517,8 +515,8 @@ button {
   min-height: 164px;
   font-family: oswald, sans-serif;
 }
-@media(max-width:1050px){
-  .carousel-caption{
+@media (max-width: 1050px) {
+  .carousel-caption {
     min-height: 180px;
   }
 }
@@ -1006,7 +1004,7 @@ table {
 }
 /* End about  */
 /* Start Contact */
-.contact{
+.contact {
   background-color: #111111;
   color: white;
   padding-top: 50px;
@@ -1014,42 +1012,42 @@ table {
 }
 .contact h1 {
   width: fit-content;
-    border-bottom: 3px solid red;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 50px;
+  border-bottom: 3px solid red;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
 }
- .form-control {
-    position: relative;
-    flex: 1 1 auto;
-    min-width: 0;
-    margin-bottom: 0;
-    background-color: transparent;
-    appearance: none;
-    border-color: var(--color-line);
-    box-shadow: none;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #ffffff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    outline: none ;
+.form-control {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  appearance: none;
+  border-color: var(--color-line);
+  box-shadow: none;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  outline: none;
 }
-.form-control:focus{
+.form-control:focus {
   background-color: transparent;
   outline: 0;
   box-shadow: none;
   border-color: #ced4da;
-  color:inherit;
+  color: inherit;
 }
 
-.input-group{
+.input-group {
   display: flex;
   margin-bottom: 25px;
   justify-content: center;
@@ -1065,8 +1063,8 @@ table {
   background-color: #ddae71;
 }
 
-@media (max-width:767px){
-  .social{
+@media (max-width: 767px) {
+  .social {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1085,7 +1083,7 @@ footer {
   padding: 20px;
 }
 footer span {
-  color:#ddae71;
+  color: #ddae71;
   font-weight: 400;
 }
 /* End Footer  */
